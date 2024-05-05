@@ -5,7 +5,7 @@ import { FaAngleRight } from "react-icons/fa6";
 
 const index = () => {
     const data = [
-        { id: 1, icon: <Image src='/selectIcon.png' width={150} height={150} alt='logopic' />, text: "Profitability and Growth", description: "Helloooooooooo" },
+        { id: 1, icon: <Image src='/selectIcon.png' width={150} height={150} alt='logopic' />, text: "Profitability and Growth", description: "At Creon, we handpick cutting-edge AI projects and offer our community and token holders early access and investment opportunities. Our community actively contributes to the growth and profitability of these projects, creating a dynamic ecosystem of innovation and shared success." },
         { id: 2, icon: <Image src='/selectIcon.png' width={150} height={150} alt='logopic' />, text: "Profitability and Growth", description: "Helloooooooooo" },
         { id: 3, icon: <Image src='/selectIcon.png' width={150} height={150} alt='logopic' />, text: "Profitability and Growth", description: "Helloooooooooo" }
     ];
