@@ -28,28 +28,30 @@ const index = () => {
                 </div>
             </div>
             <div className='w-full flex flex-col justify-center md:w-[40%] gap-7'>
-                {data.map((item) => (
-                    <div key={item.id}>
-                        <div className='w-full flex items-center'>
-                            {item.icon}
-                            <div className='flex justify-between w-full px-6 hover:text-indigo-400 transition-all duration-200'>
-                                <p className='text-2xl'>{item.text}</p>
-                                <button className='' onClick={() => handleClick(item.id)}>
-                                    {isClicked === item.id ? (
-                                        <FaAngleRight className='text-xl rotate-90 transition-all duration-200' />
-                                    ) : (
-                                        <FaAngleRight className='text-xl transition-all duration-200' />
-                                    )}
-                                </button>
+                {data.map((item) => {
+                    return (
+                        <div key={item.id}>
+                            <div className='w-full flex items-center'>
+                                {item.icon}
+                                <div className='flex justify-between w-full px-6 hover:text-indigo-400 transition-all duration-200'>
+                                    <p className='text-2xl'>{item.text}</p>
+                                    <button className='' onClick={() => handleClick(item.id)}>
+                                        {isClicked === item.id ? (
+                                            <FaAngleRight className='text-xl rotate-90 transition-all duration-200' />
+                                        ) : (
+                                            <FaAngleRight className='text-xl transition-all duration-200' />
+                                        )}
+                                    </button>
+                                </div>
                             </div>
+                            {isClicked === item.id &&
+                                <div className='text-md text-gray-300 transition-all duration-200'>
+                                    {item.description}
+                                </div>
+                            }
                         </div>
-                        {isClicked === item.id &&
-                            <div className='text-md text-gray-300 transition-all duration-200'>
-                                {item.description}
-                            </div>
-                        }
-                    </div>
-                ))}
+                    )
+                })}
             </div>
         </div >
     )

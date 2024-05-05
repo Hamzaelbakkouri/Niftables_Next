@@ -19,7 +19,7 @@ const Index = () => {
                 <Navbar />
                 <div className='h-full flex flex-col w-full md:justify-end p-8 md:p-32 flex-wrap'>
                     <h1 className="md:text-6xl font-bold text-start mb-4">
-                        THE WORLD'S FIRST <br /> PLATFORM FOR TOKENIZING <br /> AI BLOCKCHAIN PROJECTS
+                        THE WORLDS FIRST <br /> PLATFORM FOR TOKENIZING <br /> AI BLOCKCHAIN PROJECTS
                     </h1>
                     <div className='pt-9'>
                         <div className="w-[44%] h-0.5 bg-gradient-to-r from-blue-600 to-purple-600"></div>
