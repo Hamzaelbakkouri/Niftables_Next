@@ -4,7 +4,7 @@ import Card from './card'
 const index = () => {
     return (
         <>
-            <div className="relative overflow-hidden w-full h-[130vh]">
+            <div className="relative overflow-hidden w-full h-[360vh] md:h-[130vh]">
                 <video
                     autoPlay
                     loop
@@ -15,7 +15,7 @@ const index = () => {
                     <source src="./videos/roadmap-video.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-[black] to-transparent to-[80%]"></div>
-                <div className='absolute flex flex-col gap-3 px-52 py-8'>
+                <div className='absolute flex flex-col gap-3 md:px-52 py-8 h-full'>
                     <Card />
                     <Card />
                     <Card />

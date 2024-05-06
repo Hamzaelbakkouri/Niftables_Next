@@ -16,9 +16,9 @@ const Index = () => {
         setIsClicked(isClicked === id ? null : id);
     };
     return (
-        <div className='flex justify-center items-center w-full text-white flex-wrap md:px-40'>
+        <div className='flex justify-center items-center w-full text-white flex-wrap md:px-40 p-5'>
             <div className='md:w-[60%] flex flex-col gap-16'>
-                <div className='uppercase text-5xl'>Our vision is to support the innovation of AI blockchain projects
+                <div className='uppercase md:text-5xl'>Our vision is to support the innovation of AI blockchain projects
                     <p className='bg-gradient-to-r from-blue-600 to-purple-500 inline-block text-transparent bg-clip-text'>
                         while prioritizing communities and democratizing profits
                     </p>

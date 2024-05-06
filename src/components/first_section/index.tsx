@@ -10,7 +10,7 @@ const index = () => {
     ]
     const text: string = "The Creon NFT pass unlocks access to AI projects, the Creon launchpad, and a ticket to generate passive income through AI-driven tools"
     return (
-        <div className='flex w-full justify-center items-center gap-5 px-36 py-8'>
+        <div className='flex px-5 w-full md:justify-center items-center md:gap-5 md:px-36 py-8'>
 
             <div className='flex flex-col w-full h-full justify-center items-center'>
                 <div className='w-full uppercase text-white md:text-6xl'>
@@ -24,19 +24,19 @@ const index = () => {
                 {paragraphs.map((data, index) => {
                     return (
                         <div key={index} className='w-full py-3'>
-                            <p className='w-[60%] text-sm text-start px-6 border border-gray-800 py-3 rounded-md text-gray-300 truncate'>{data}</p>
+                            <p className='md:w-[60%] text-sm text-start px-6 border border-gray-800 py-3 rounded-md text-gray-300 truncate'>{data}</p>
                         </div>
                     )
                 })
                 }
 
                 <div className='w-full py-3'>
-                    <button className='bg-gradient-to-r from-blue-600 to-purple-600 text-white px-36 py-3 rounded-md hover:bg-blue-400 transition-colors duration-300'>Buy Creon Pass</button>
+                    <button className='bg-gradient-to-r from-blue-600 to-purple-600 text-white px-20 md:px-36 py-3 rounded-md hover:bg-blue-400 transition-colors duration-300'>Buy Creon Pass</button>
                 </div>
             </div>
 
-            <div className='flex flex-col w-full justify-center items-center p-5 relative'>
-                <span className='absolute top-5 h-10 bg-black blur-md w-full'>&#160;</span>
+            <div className='flex flex-col w-full justify-center items-center md:p-5 relative'>
+                <span className='absolute top-5 h-10 bg-black blur-md md:w-full'>&#160;</span>
                 <video
                     autoPlay
                     loop
